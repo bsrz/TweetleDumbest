@@ -14,6 +14,13 @@
 		D19118E4280888BE0009A5BA /* TweetleDumbestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19118E3280888BE0009A5BA /* TweetleDumbestTests.swift */; };
 		D19118EE280888BE0009A5BA /* TweetleDumbestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19118ED280888BE0009A5BA /* TweetleDumbestUITests.swift */; };
 		D19118F0280888BE0009A5BA /* TweetleDumbestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19118EF280888BE0009A5BA /* TweetleDumbestUITestsLaunchTests.swift */; };
+		D191190128088A770009A5BA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D191190028088A770009A5BA /* ComposableArchitecture */; };
+		D191190428088AB90009A5BA /* AppDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191190328088AB90009A5BA /* AppDomain.swift */; };
+		D1B945182809256700DCD16B /* AuthDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B945172809256700DCD16B /* AuthDomain.swift */; };
+		D1B9451A2809258700DCD16B /* HomeDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B945192809258700DCD16B /* HomeDomain.swift */; };
+		D1B9451C280925E100DCD16B /* OnboardingDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B9451B280925E100DCD16B /* OnboardingDomain.swift */; };
+		D1B9451E2809260700DCD16B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B9451D2809260700DCD16B /* AuthView.swift */; };
+		D1B945202809264100DCD16B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B9451F2809264100DCD16B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		D19118E9280888BE0009A5BA /* TweetleDumbestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetleDumbestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19118ED280888BE0009A5BA /* TweetleDumbestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetleDumbestUITests.swift; sourceTree = "<group>"; };
 		D19118EF280888BE0009A5BA /* TweetleDumbestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetleDumbestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D191190328088AB90009A5BA /* AppDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDomain.swift; sourceTree = "<group>"; };
+		D19119052808B4A10009A5BA /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
+		D1B945172809256700DCD16B /* AuthDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDomain.swift; sourceTree = "<group>"; };
+		D1B945192809258700DCD16B /* HomeDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDomain.swift; sourceTree = "<group>"; };
+		D1B9451B280925E100DCD16B /* OnboardingDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDomain.swift; sourceTree = "<group>"; };
+		D1B9451D2809260700DCD16B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D1B9451F2809264100DCD16B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D191190128088A770009A5BA /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +89,7 @@
 		D19118C6280888BD0009A5BA = {
 			isa = PBXGroup;
 			children = (
+				D19119052808B4A10009A5BA /* Modules */,
 				D19118D1280888BD0009A5BA /* TweetleDumbest */,
 				D19118E2280888BE0009A5BA /* TweetleDumbestTests */,
 				D19118EC280888BE0009A5BA /* TweetleDumbestUITests */,
@@ -137,6 +153,7 @@
 		D19118FD280889060009A5BA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D191190228088A860009A5BA /* Domains */,
 				D19118FE280889110009A5BA /* UI */,
 				D19118D2280888BD0009A5BA /* App.swift */,
 			);
@@ -146,9 +163,22 @@
 		D19118FE280889110009A5BA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D1B9451D2809260700DCD16B /* AuthView.swift */,
+				D1B9451F2809264100DCD16B /* HomeView.swift */,
 				D19118D4280888BD0009A5BA /* RootView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D191190228088A860009A5BA /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				D191190328088AB90009A5BA /* AppDomain.swift */,
+				D1B945172809256700DCD16B /* AuthDomain.swift */,
+				D1B945192809258700DCD16B /* HomeDomain.swift */,
+				D1B9451B280925E100DCD16B /* OnboardingDomain.swift */,
+			);
+			path = Domains;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +197,9 @@
 			dependencies = (
 			);
 			name = TweetleDumbest;
+			packageProductDependencies = (
+				D191190028088A770009A5BA /* ComposableArchitecture */,
+			);
 			productName = TweetleDumbest;
 			productReference = D19118CF280888BD0009A5BA /* TweetleDumbest.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +272,9 @@
 				Base,
 			);
 			mainGroup = D19118C6280888BD0009A5BA;
+			packageReferences = (
+				D19118FF28088A770009A5BA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = D19118D0280888BD0009A5BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,7 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B9451E2809260700DCD16B /* AuthView.swift in Sources */,
+				D1B9451C280925E100DCD16B /* OnboardingDomain.swift in Sources */,
+				D1B9451A2809258700DCD16B /* HomeDomain.swift in Sources */,
 				D19118D5280888BD0009A5BA /* RootView.swift in Sources */,
+				D1B945182809256700DCD16B /* AuthDomain.swift in Sources */,
+				D1B945202809264100DCD16B /* HomeView.swift in Sources */,
+				D191190428088AB90009A5BA /* AppDomain.swift in Sources */,
 				D19118D3280888BD0009A5BA /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +649,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D19118FF28088A770009A5BA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D191190028088A770009A5BA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D19118FF28088A770009A5BA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D19118C7280888BD0009A5BA /* Project object */;
 }
